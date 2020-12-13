@@ -25,11 +25,11 @@ const arrayPessoas = [
     }
 ];
 
-listarMenores(arrayPessoas);
+listarNomes(arrayPessoas);
 
-function listarMenores(pessoas) {
-    const menores = pessoas.filter(pessoa => pessoa.idade < 18);
-    for (const pessoa of menores) {
-        console.log(pessoa.nome);        
+function listarNomes(pessoas) {
+    const nomes = pessoas.map(pessoa => pessoa.nome);
+    for (const nome of nomes) {
+        console.log(nome);        
     }
 }
