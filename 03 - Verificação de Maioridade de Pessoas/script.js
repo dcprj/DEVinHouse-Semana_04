@@ -30,6 +30,7 @@ console.log(arrayPessoas);
 maior(arrayPessoas);
 
 function maior(pessoas) {
-   const maior = pessoas.find(pessoa  => pessoa.idade >= 18);
-   maior ? console.log(maior) : console.log("Não há maiores na lista");   
+   const maior = pessoas.some(pessoa  => pessoa.idade >= 18);
+   maior ? console.log("Há maiores na lista") : console.log("Não há maiores na lista");   
+//    maior ? console.log(maior) : console.log("Não há maiores na lista");   
 }
