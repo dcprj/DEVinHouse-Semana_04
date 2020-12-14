@@ -57,14 +57,9 @@ const listaDeCidades = [
     },
 ]
 
-function filtraCidadePorEstado(listaDecidades) {
-    const resultado = listaDecidades.filter(cidade => cidade.estado === 'SC');
+function filtraCidadePorEstado(lista) {
+    const resultado = lista.filter(cidade => cidade.estado === 'SC');
     return resultado;
 }
-
-// function filtraCidadePorEstado(listaDecidades, estado) {
-//     const resultado = listaDecidades.filter(cidade => cidade.estado === estado);
-//     return resultado;
-// }
 
 console.log(filtraCidadePorEstado(listaDeCidades));
